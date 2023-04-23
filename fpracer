@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+import sys
+
+while True:
+    try:
+        f = open(sys.argv[1], "r", encoding="utf-8", errors="ignore")
+        break
+    except FileNotFoundError:
+        pass
+
+s = ""
+while s == "":
+    s = f.read()
+    print(s)
