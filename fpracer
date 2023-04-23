@@ -12,4 +12,5 @@ while True:
 s = ""
 while s == "":
     s = f.read()
-    print(s)
+
+print(s)
